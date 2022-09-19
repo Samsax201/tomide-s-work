@@ -7,32 +7,19 @@ body{
     width: 100%;
     font-family: 'Montserrat', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 /* section header starts here  */
 .header{
-    background: url(./background.png);
+    background: url(./images/background.png);
     position: relative;
-    /* border-bottom: 2px solid black; */
-    /* border-width: px; */
 }
-/* .header::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 20px;
-    background-size: 40px;
-    background-color: blue;
-    background-image: linear-gradient(45deg, green 12px, transparent 0%,  12px)
-                      /* linear-gradient(-45deg, green 12px, transparent 0%,  12px); */
-    
-/* } */
 .head{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 0;
-    /* justify-content: center; */
 }
 .n1{
     font-size: 13px;
@@ -73,7 +60,7 @@ body{
     width: 100%;
 }
 .n4-2{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     height: 20px;
     width: 20px;
 }
@@ -189,9 +176,15 @@ body{
     color: #000000 70%;
     font-size: 20px;
 }
+/* section.head ends here  */
+/* section main starts here  */
+/* section gomusic starts here  */
+.main{
+    background:linear-gradient(110.38deg, #2D87DA 1.14%, rgba(0, 133, 255, 0.72) 71.47%);
+    max-width: 1500px;
+}
 .gomusic{
     width: 100%;
-    background:linear-gradient(110.38deg, #2D87DA 1.14%, rgba(0, 133, 255, 0.72) 71.47%);
     display: flex;
     flex-direction: column;
     padding: 75px 0;
@@ -223,17 +216,23 @@ body{
     flex-wrap: wrap;
     justify-content: space-evenly;
     color: white;
+    flex-wrap: wrap;
 }
+.gm-nxt-1{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
 .gm-1{
     /* height: 200px; */
-    width: 55%;
-    /* border: 3px solid white; */
-    display: flex;
-
+    width: 60%;
 }
 .gm-1-c{
     height: 550px;
-    width: 550px;
+    width: 550px; 
+    /* border: 3px solid white; */
+    display: flex;
     border: 45px solid white;
     border-radius: 50%;
     position: relative;
@@ -243,36 +242,31 @@ body{
     margin-top: 0;
     height: 500px ;
     width: 220px;
-    /* border: 2px solid black; */
-    margin-left: 20px;
-    /* position: fixed; */
+    padding-left: 10px;
 }
 .gm-phones1 img{
     width: 275px;
-    /* height: 100%; */
 }
 .gm-phones2{
     margin-top: 0;
     height: 400px ;
     width: 220px;
-    /* border: 2px solid black; */
     margin-left: 20px;
-    /* position: fixed; */
 }
 .gm-phones2 img{
     width: 285px;
     padding-top: 40px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 20px;
+    margin-right:  20px ;
 }
 .gm-2{
-    /* border: 2px solid black; */
-    width: 30%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-weight: lighter;
-    /* align-items: center; */
+    padding: 0 30px;
 }
 .gm-2 h4{
     font-size: 35px;
@@ -283,6 +277,238 @@ body{
     font-size: 15px;
     font-weight: lighter;
 }
-
-
-/* section header ends here  */
+.gm-nxt-2{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    color: white  ; 
+    /* justify-content: ; */
+    /* border: 3px solid red; */
+}
+.gm-nxt-2 .gm-1{
+    justify-content: flex-end;
+    width: 65%;
+    /* border: 3px solid black; */
+} 
+.gm-nxt-2 .gm-2{
+    width: 30%;
+    /* border: 3px solid green; */
+}
+.hey{
+    width: 60%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: flex-end;
+}  
+.morescreen{
+    padding: 40px 0;
+}
+.morescreen .text{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 30px;
+}
+.ms-3{
+    margin-top: 25px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0;
+    background: rgba(114, 186, 253, 0.72);
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+}
+.d-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: #FFFFFF;
+}
+.d-text1{
+    font-size: 20px;
+}
+.d-text2{
+    font-size: 20px;
+}
+.ms-3 img{
+    width: 100%;
+    background: transparent;
+}
+.links{
+    background: white;
+    border-radius: 5px;
+    width: 75%;
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 10px 5px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.links a{
+    font-size: 16px;
+    color: black;
+}
+.links span{
+    font-size: 20px;
+    padding: 0 5px;
+}
+.ffwma-1{
+    color: white;
+    display: flex;
+    flex-direction: column; align-items: center;
+    padding: 30px 0;
+    line-height: 1.3;
+}
+.ffwma-1 h2{
+    font-size: 75px;
+    border-bottom: 3px dashed white;
+}
+.ffwma-1 p{
+    font-size: 25px;
+    padding: 15px 0;
+}
+.ffwma-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    padding: 20px 0;
+}
+.ffwma-2 .screens{
+    width: 60%;
+    display: flex;
+}
+.ffwma-2 .sc{
+    height: 450px;
+    width: 450px;
+    border: 60px solid white;
+    border-radius: 50%;
+    display: flex;
+    padding-right: 20px;
+    justify-content: flex-start;
+    left: 0;
+}
+.ffwma-2 .screens img{
+    width: 600px;
+}
+.ffwma-2 .text{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: lighter;
+    padding: 0 30px;
+}
+.hi{
+    justify-content: flex-end;
+}
+.ffwma-3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    padding: 20px 0;
+}
+.ffwma-3 .screens{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+.ffwma-3 .sc{
+    height: 450px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+}
+.ffwma-3 .text{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    font-weight: lighter;
+    justify-content: center;
+    font-weight: lighter;
+    padding: 10px 30px;
+}
+.ffwma-3 .text h4{
+    font-size: 25px;
+    font-weight: lighter;
+}
+.ffwma-3 .text p{
+    font-size: 12px;
+    font-weight: lighter;
+    padding: 20px 0;
+}
+.ffwma-4{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+.gp-1{
+    padding-top: 160px;
+}
+.gp-2{
+    padding-top: 120px;
+}
+.gp-3{
+    padding-top: 80px;
+}
+.gp-4{
+    padding-top: 0px;
+}
+.lgp-1{
+    color: white;
+    display: flex;
+    flex-direction: column; align-items: center;
+    padding: 40px 0;
+    line-height: 1.3;
+}
+.lgp-1 h2{
+    font-size: 75px;
+    border-bottom: 3px dashed white;
+}
+.lgp-1 p{
+    font-size: 25px;
+    padding: 15px 0;
+}
+.lgp-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    padding: 20px 0;
+}
+.lgp-2 .screens{
+    width: 60%;
+    display: flex; 
+    /* border: 3px solid red; */
+    justify-content: center;
+}
+.scr{
+    /* border: 3px solid black; */
+    display: flex;
+    
+}
+.lgp-2 .text{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    font-weight: lighter;
+    justify-content: center;
+    font-weight: lighter;
+    padding: 10px 40px;
+}
+.hmm{
+    padding-left: 60px;
+}
+.haa{
+    padding-right: 40px;
+}
+/* section go music ends here  */
